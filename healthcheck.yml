@@ -3,6 +3,12 @@
   hosts: all
   gather_facts: true
   tasks:
+    - name: ComputerSystem
+      win_shell: Get-WmiObject Win32_ComputerSystem
+      register: cs
+
+    - debug:
+        msg: "{{cs.stdout}}"
 
     - debug:
         msg: "{{ ansible_facts['distribution'] }}"
