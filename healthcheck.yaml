@@ -1,0 +1,11 @@
+---
+- name: test playbook
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: hostname
+      shell: hostname
+      register: hostname
+
+    - debug:
+        msg: "{{ hostname }}"
