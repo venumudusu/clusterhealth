@@ -3,9 +3,6 @@
   hosts: all
   gather_facts: true
   tasks:
-    - name: hostname
-      win_shell: hostname
-      register: hostname
 
     - debug:
-        msg: "{{ hostname }}"
+        msg: "{{ ansible_facts }}"
