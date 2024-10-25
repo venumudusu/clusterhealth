@@ -4,7 +4,7 @@
   gather_facts: true
   tasks:
     - name: hostname
-      shell: hostname
+      win_shell: hostname
       register: hostname
 
     - debug:
