@@ -8,7 +8,6 @@
       register: cs
 
     - mail:
-        host: mail01.winadmin.me
         to: venu@winadmin.me
         subject: Mail from Ansible
         body: Hello there!
