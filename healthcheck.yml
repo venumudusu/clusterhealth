@@ -11,7 +11,7 @@
         host: mail01.winadmin.me
         to: venu@winadmin.me
         subject: Mail from Ansible
-        body: "{{ansible_facts}}"
+        body: Hello there!
         delegate_to: localhost
         run_once: True
 
