@@ -7,7 +7,7 @@
       win_shell: Get-WmiObject Win32_ComputerSystem
       register: cs
 
-    - mail:
+    - win_mail:
         host: mail01.winadmin.me
         to: venu@winadmin.me
         subject: Mail from Ansible
