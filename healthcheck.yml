@@ -1,6 +1,6 @@
 ---
 - name: test playbook
-  hosts: all
+  hosts: dc01.winadmin.me
   gather_facts: true
   tasks:
     - name: ComputerSystem
