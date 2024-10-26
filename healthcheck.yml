@@ -12,8 +12,8 @@
         to: venu@winadmin.me
         subject: Mail from Ansible
         body: Hello there!
-        delegate_to: localhost
-        run_once: True
+      delegate_to: localhost
+      run_once: True
 
     - debug:
         msg: "{{ ansible_facts['distribution'] }}"
