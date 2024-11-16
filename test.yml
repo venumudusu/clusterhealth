@@ -1,0 +1,10 @@
+---
+- name: test play book
+  hosts: all
+  tasks:
+    - name: Get hostname
+      win_shell: gwmi win32_computersystem
+      register: cs
+
+    - debug:
+        msg: "{{ os }}"
